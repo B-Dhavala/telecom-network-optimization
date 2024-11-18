@@ -33,7 +33,7 @@ with st.sidebar:
 sample_df = pd.DataFrame(sample_data, index=[0])
 sample_df = feature_engineering(sample_df)  
 
-categorical_columns = ['Service_Type', 'Network_Tower_ID', 'Customer_Plan', 'Call_Direction', 'Roaming_Status', 'Network_Congestion_Level']
+categorical_columns = ['Service_Type', 'Network_Tower_ID', 'Customer_Plan', 'Roaming_Status', 'Network_Congestion_Level']
 sample_df = pd.get_dummies(sample_df, columns=categorical_columns)
 
 sample_df['Caller_Location'] = label_encoder_caller.transform(sample_df['Caller_Location'])
