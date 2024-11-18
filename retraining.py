@@ -8,7 +8,7 @@ import pandas as pd
 def retrain_model_and_save():
     # Load and preprocess the data
     df = pd.read_csv('caller.csv')
-    df = handle_missing_values(df, numerical_columns=['Call_Duration_Seconds', 'Data_Transferred_MB', 'Signal_Strength', 'Time_to_Connect_Seconds', 'Allocated_Bandwidth_MB'], 
+    df = handle_missing_values(df, numerical_columns=['Call_Duration_Seconds', 'Data_Transferred', 'Signal_Strength', 'Time_to_Connect_Seconds', 'Allocated_Bandwidth'], 
                                categorical_columns=['Service_Type', 'Network_Tower_ID', 'Customer_Plan', 'Call_Direction', 'Roaming_Status', 'Network_Congestion_Level'],
                                geographical_columns=['Caller_Location', 'Receiver_Location'])
 
@@ -20,8 +20,8 @@ def retrain_model_and_save():
     kmeans = kmeans_clustering(df)
 
     # Train XGBoost model
-    X = df.drop(columns=['Allocated_Bandwidth_MB', 'Combined_Label', 'Combined_Label_Encoded'])
-    y = df['Allocated_Bandwidth_MB']
+    X = df.drop(columns=['Allocated_Bandwidth', 'Combined_Label', 'Combined_Label_Encoded'])
+    y = df['Allocated_Bandwidth']
     
     # Train-test split and model training
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
