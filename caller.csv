@@ -1,25 +1,25 @@
-Caller_ID,Timestamp,Caller_Location,Receiver_Location,Service_Type,Call_Duration_Seconds,Data_Transferred_MB,Network_Tower_ID,Customer_Plan,Call_Direction,Roaming_Status,Network_Congestion_Level,Signal_Strength,Time_to_Connect_Seconds,Allocated_Bandwidth_MB
+Caller_ID,Timestamp,Caller_Location,Receiver_Location,Service_Type,Call_Duration_Seconds,Data_Transferred,Network_Tower_ID,Customer_Plan,Call_Direction,Roaming_Status,Network_Congestion_Level,Signal_Strength,Time_to_Connect_Seconds,Allocated_Bandwidth
 1,7/28/2022 3:50,Delhi,Chennai,Voice,132,79.8577557,Tower_15,Prepaid,Outgoing,No,Medium,-60.72024233,6.387926358,154.8189106
-2,2/16/2022 12:08,Surat,Chennai,,496,10.89751667,,Postpaid,Outgoing,Yes,Medium,-55.35295417,6.410035106,139.9037744
+2,2/16/2022 12:08,Delhi,Chennai,,496,10.89751667,,Postpaid,Outgoing,Yes,Medium,-55.35295417,6.410035106,139.9037744
 3,5/4/2023 13:00,Mumbai,Chennai,Data,338,97.02107536,Tower_12,Postpaid,Incoming,Yes,Medium,-52.45789164,1.007008893,245.7520611
 4,11/23/2022 8:42,Kolkata,Bengaluru,Video,190,159.0786991,Tower_12,Prepaid,Incoming,No,Low,-89.077503,5.722971942,136.5847372
 5,3/20/2023 0:32,Chennai,Chennai,Video,505,487.1402042,Tower_15,Postpaid,Incoming,No,High,-71.75720063,8.066583653,335.9803296
 6,6/27/2022 1:21,Bengaluru,Chennai,Video,596,491.783134,Tower_3,Prepaid,Incoming,Yes,Medium,-55.60238373,7.122767847,405.5642255
 7,5/31/2022 19:16,Mumbai,Jaipur,Data,303,,Tower_14,Postpaid,Outgoing,Yes,Low,-57.66410608,3.741523923,
-8,5/15/2023 16:36,Lucknow,Surat,Video,369,128.1024784,Tower_7,Prepaid,Incoming,Yes,Low,-65.60013369,8.498754206,133.3798876
+18,5/15/2023 16:36,Lucknow,Surat,Video,369,128.1024784,Tower_7,Prepaid,Incoming,Yes,Low,-65.60013369,8.498754206,133.3798876
 9,7/3/2023 4:33,Mumbai,Chennai,Video,110,136.802191,Tower_8,Prepaid,Incoming,No,Medium,-59.78554359,4.82640287,154.9563019
 10,5/9/2023 9:29,Mumbai,Nagpur,Video,506,485.0964676,Tower_12,Postpaid,Incoming,No,High,-52.42004234,9.053446154,441.479316
 11,4/3/2022 12:04,Bengaluru,Surat,Data,300,9.760757703,Tower_8,Postpaid,Outgoing,Yes,Medium,-56.21864605,7.725880991,140.1356969
 12,4/14/2022 13:01,Kolkata,Surat,Voice,246,28.81251646,Tower_13,Postpaid,Outgoing,No,Low,-84.363031,8.219772827,82.95372649
-13,2/17/2023 19:29,Delhi,Ahmedabad,Data,550,77.45223216,Tower_12,Postpaid,Outgoing,No,Low,-78.26047301,1.126718404,253.9712436
-14,5/4/2023 18:45,Ahmedabad,Chennai,Video,421,367.2135123,Tower_1,Prepaid,Incoming,Yes,Low,-65.76160101,9.336707907,
+12,2/17/2023 19:29,Kolkata,Ahmedabad,Data,550,77.45223216,Tower_12,Postpaid,Outgoing,No,Low,-78.26047301,1.126718404,253.9712436
+44,5/4/2023 18:45,Ahmedabad,Chennai,Video,421,367.2135123,Tower_1,Prepaid,Incoming,Yes,Low,-65.76160101,9.336707907,
 15,7/4/2022 23:48,Hyderabad,Chennai,Voice,57,86.44723916,Tower_8,Postpaid,Incoming,No,Low,-72.02197303,1.858691048,67.63574667
 16,10/9/2022 2:45,Lucknow,Surat,Video,1173,169.3398278,Tower_3,Postpaid,Outgoing,No,Medium,-66.34808849,3.472496137,221.7214962
 17,1/1/2023 1:54,Surat,Delhi,Data,1061,85.0424686,Tower_5,Postpaid,Outgoing,No,Medium,-67.5489121,7.93870462,224.058624
-18,1/9/2023 20:52,Bengaluru,Lucknow,Voice,992,71.35562608,,Postpaid,Outgoing,Yes,Medium,-72.42653993,2.815472821,352.105192
+18,1/9/2023 20:52,Lucknow,Bengaluru,Voice,992,71.35562608,,Prepaid,Outgoing,Yes,Medium,-72.42653993,2.815472821,352.105192
 19,6/1/2022 20:40,Lucknow,Surat,Data,270,32.12124213,Tower_4,Postpaid,Incoming,Yes,Low,-53.69734104,3.243630062,63.01652228
-20,11/20/2022 22:24,Delhi,Surat,Voice,200,21.10306125,Tower_13,,Outgoing,Yes,Low,-86.92080361,3.607763076,92.50793278
-21,1/23/2022 8:55,Delhi,Ahmedabad,Data,1177,62.81105077,Tower_6,Postpaid,Incoming,Yes,High,-71.73861718,2.965963935,438.6383424
+20,11/20/2022 22:24,Delhi,Surat,Voice,200,21.10306125,Tower_13,Postpaid,Outgoing,Yes,Low,-86.92080361,3.607763076,92.50793278
+20,1/23/2022 8:55,Delhi,Ahmedabad,Data,1177,62.81105077,Tower_6,Postpaid,Incoming,Yes,High,-71.73861718,2.965963935,438.6383424
 22,8/28/2023 6:35,Chennai,Lucknow,Data,360,33.11015708,Tower_7,Postpaid,Incoming,Yes,High,-53.72686234,3.449190244,133.4713328
 23,5/3/2022 5:07,Nagpur,Surat,Video,288,13.40654396,Tower_8,Prepaid,Outgoing,No,Medium,-68.63642322,5.363469742,70.61591893
 24,12/8/2022 14:00,Bengaluru,Ahmedabad,Video,833,175.431434,Tower_15,Postpaid,Outgoing,No,Medium,-83.26835831,2.968877976,297.6721682
@@ -40,7 +40,7 @@ Caller_ID,Timestamp,Caller_Location,Receiver_Location,Service_Type,Call_Duration
 39,11/21/2023 11:47,Pune,Ahmedabad,Video,312,222.8532391,Tower_1,Prepaid,Outgoing,No,Medium,-66.92384461,5.432659244,167.8028361
 40,11/29/2022 0:06,Kolkata,Hyderabad,Data,545,3.407280677,Tower_17,Prepaid,Incoming,Yes,Low,-88.25584913,9.950954597,140.7686576
 41,6/12/2022 22:53,Hyderabad,Mumbai,Data,75,91.57157463,Tower_3,Prepaid,Incoming,Yes,Medium,-60.09124904,9.577646623,141.7852985
-42,3/2/2023 23:29,Pune,Ahmedabad,Video,331,483.6608613,Tower_3,Prepaid,Outgoing,Yes,Low,-50.78673665,1.678116304,293.5980586
+43,3/2/2023 23:29,Chennai,Ahmedabad,Video,331,483.6608613,Tower_3,Prepaid,Outgoing,Yes,Low,-50.78673665,1.678116304,293.5980586
 43,9/28/2022 13:43,Chennai,Nagpur,Voice,190,32.37527851,Tower_18,Prepaid,,Yes,Medium,-67.7279495,9.425392967,86.76338133
 44,6/19/2023 8:23,Kolkata,Chennai,Video,317,338.8603232,Tower_2,Prepaid,Outgoing,No,High,-79.83345404,3.657615296,187.6820987
 45,5/12/2023 7:42,Bengaluru,Lucknow,Data,133,70.00455836,Tower_11,,Outgoing,No,Low,-61.64356012,5.975379792,104.9713123
