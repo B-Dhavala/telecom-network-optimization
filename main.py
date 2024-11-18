@@ -31,7 +31,7 @@ logger.info("Starting the script execution.")
 df = pd.read_csv('caller.csv')
 
 # EDA
-numerical_columns = ['Call_Duration_Seconds', 'Data_Transferred_MB', 'Signal_Strength', 'Time_to_Connect_Seconds', 'Allocated_Bandwidth_MB']
+numerical_columns = ['Call_Duration_Seconds', 'Data_Transferred', 'Signal_Strength', 'Time_to_Connect_Seconds', 'Allocated_Bandwidth']
 categorical_columns = ['Service_Type', 'Network_Tower_ID', 'Customer_Plan', 'Call_Direction', 'Roaming_Status', 'Network_Congestion_Level']
 geographical_columns = ['Caller_Location', 'Receiver_Location']
 
@@ -68,8 +68,8 @@ monthly_calls = df.resample('M').size()
 # Monthly Call Volume Plot
 monthly_call_volume_plot(monthly_calls)
 
-# Perform ADF Test on 'Allocated_Bandwidth_MB'
-adf_statistic, p_value = adf_test(monthly_data['Allocated_Bandwidth_MB']) 
+# Perform ADF Test on 'Allocated_Bandwidth'
+adf_statistic, p_value = adf_test(monthly_data['Allocated_Bandwidth']) 
 
 # Check stationarity
 if p_value < 0.05:
@@ -89,8 +89,8 @@ df = one_hot_encode(df, categorical_columns)
 kmeans = kmeans_clustering(df)
 
 # Train-Test Split
-X = df.drop(columns=['Allocated_Bandwidth_MB', 'Combined_Label', 'Combined_Label_Encoded'])
-y = df['Allocated_Bandwidth_MB']
+X = df.drop(columns=['Allocated_Bandwidth', 'Combined_Label', 'Combined_Label_Encoded'])
+y = df['Allocated_Bandwidth']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Train XGBoost Model
