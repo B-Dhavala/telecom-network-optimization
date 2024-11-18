@@ -29,7 +29,7 @@ logger.info("Starting the script execution.")
 
 # Load data
 df = pd.read_csv('caller.csv')
-
+df = df.drop(columns='Call_Direction')
 # EDA
 numerical_columns = ['Call_Duration_Seconds', 'Data_Transferred', 'Signal_Strength', 'Time_to_Connect_Seconds', 'Allocated_Bandwidth']
 categorical_columns = ['Service_Type', 'Network_Tower_ID', 'Customer_Plan', 'Call_Direction', 'Roaming_Status', 'Network_Congestion_Level']
