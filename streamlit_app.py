@@ -18,7 +18,7 @@ with st.sidebar:
         'Timestamp': st.text_input('Timestamp (MM/DD/YYYY HH MM)', '5/9/2023 9:29'),
         'Caller_ID': st.number_input('Caller ID', min_value=1, max_value=10000, step=1),
         'Call_Duration_Seconds': st.number_input('Call Duration (Seconds)', min_value=0, step=1),
-        'Data_Transferred': st.number_input('Data Transferred', min_value=0.0, step=0.1),
+        'Data_Transferred': st.number_input('Data Transferred (MB)', min_value=0.0, step=0.1),
         'Signal_Strength': st.number_input('Signal Strength (dBm)', min_value=-100.0, step=0.1),
         'Time_to_Connect_Seconds': st.number_input('Time to Connect (Seconds)', min_value=0.0, step=0.1),
         'Caller_Location': st.selectbox('Caller Location', ['Surat', 'Mumbai', 'Delhi', 'Chennai', 'Jaipur', 'Nagpur', 'Kolkata', 'Ahmedabad', 'Bengaluru', 'Hyderabad', 'Lucknow', 'Pune']),
@@ -62,7 +62,7 @@ st.subheader('Predicted Allocated Bandwidth:')
 
 predicted_value_html = f"""
     <p style="font-size: 20px; color: blue; font-weight: bold;">
-        {predicted_bandwidth[0]:.2f}
+        {predicted_bandwidth[0]:.2f} Kbps
     </p>
 """
 st.markdown(predicted_value_html, unsafe_allow_html=True)
